@@ -1,3 +1,19 @@
+Uma Aplicação Angular 8 com o frameworks de CSS BootStrap;
+
+Aplicaçao web para avaliacao de cadidato da FPF Frontend desenvolvido em Angular para consumir um servidor REST com um CRUD de Produtos.
+
+Passos para execucao:
+*Ter o Node.js 14.17.3(preferencialmente)instalado na maquina;
+*Com o NPM instale o Angular CLI para utilizar o Angular 8 (npm install -g @angular/cli@8.3.18);
+*Acessar a pasta do projeto pelo terminal;
+*Instalar o bootstrap na pasta da aplicação(npm install bootstrap);
+*Ter a aplicaçao backend em execução;
+*Executar a aplicação (ng serve).
+
+Lucas Vasconcelos Souza
+
+
+
 # FPFProdutos
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
