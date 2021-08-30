@@ -1,0 +1,27 @@
+<div class="container px-5 px-md-4">
+    <h2 class="row justify-content-md-center">Lista de Produtos</h2>
+
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#Id</th>
+                <th scope="col">Descriçao</th>
+                <th scope="col">Data da Compra</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let produto of produtos">
+                <td>{{produto.id}}</td>
+                <td>{{produto.descricao}}</td>
+                <td>{{produto.data_compra}}</td>
+                <td>{{produto.preco}}</td>
+                <td>{{produto.categoria}}</td>
+                <td><a routerLink="alterar/{{produto.id}}">Editar</a> |
+                    <a routerLink="remover/{{produto.id}}">Remover</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,50 @@
+<div>
+    <main>    
+          <h1 class="row justify-content-md-center">Cadastrar Produtos</h1>
+            <div class="container px-5 px-md-4">  
+              <form>
+                    <div class="form-group">
+                        <div class="form-group row">
+                            <label for="descricao" class="col-sm-2 col-form-label">Descrição</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control"  placeholder="Descrição" name="descricao" [(ngModel)]="produto.descricao">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group row">
+                            <label for="data_compra" class="col-sm-2 col-form-label">Data da Compra</label>
+                            <div class="col-sm-10">
+                              <input type="date" class="form-control"  placeholder="Data da Compra" name="data_compra" [(ngModel)]="produto.data_compra">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group row">
+                          <div class="input-group mb-3">
+                            <label for="preco" class="col-sm-2 col-form-label">Preço</label>
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">R$</span>
+                            </div>
+                            <input type="text" placeholder="Preço" class="form-control" name="preco" [(ngModel)]="produto.preco">
+                            <div class="input-group-append">
+                              <span class="input-group-text">,00</span>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <div class="form-group row">
+                            <label for="categoria" class="col-sm-2 col-form-label">Categoria</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control"  placeholder="Categoria" name="categoria" [(ngModel)]="produto.categoria">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group row justify-content-md-center">
+                            <div class="col-sm-1">
+                              <button type="button" class="btn btn-primary"  (click)="cadastrar()">Cadastrar</button>
+                            </div>
+                          </div>
+                    </div>
+                </form>
+            </div>
+    </main>
+</div>

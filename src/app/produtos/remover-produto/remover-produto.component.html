@@ -1,0 +1,20 @@
+<div>
+    <main>
+    <h1 class="row justify-content-md-center">Excluir Produto</h1>
+    <div class="container">
+        <br>
+        <label class="lead mb-4 text-center col-12">Descrição do Produto: <strong>{{produto.descricao}}</strong></label>
+        <br>
+        <label class="lead mb-4 text-center col-12">Preço: <strong>{{produto.preco}}</strong></label>
+        <br>
+        <label class="lead mb-4 text-center col-12">Data da Compra: <strong>{{produto.data_compra}}</strong></label>
+        <br>
+        <label class="lead mb-4 text-center col-12">Categoria: <strong>{{produto.categoria}}</strong></label>
+    </div>
+        <br>
+        <div class="row justify-content-evenly">
+            <button type="button" class="btn btn-lg btn-outline-primary mb-3 col-2" (click)="remover()">Confirmar</button>
+            <button type="button" class="btn btn-lg btn-outline-secondary mb-3 col-2" (click)="voltar()">Cancelar</button>
+        </div>
+    </main>
+</div>
